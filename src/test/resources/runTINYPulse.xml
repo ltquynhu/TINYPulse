@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TINYPulse" parallel="tests" thread-count="2">
+    <parameter name="appUrl" value="https://staging.tinyserver.info/engage/signup"/>
+    <test name=" Run on Browser">
+        <parameter name="browser" value="CHEADLESS"/>
+        <classes>
+            <class name="setting.Setting_01_AddPeople"/>
+        </classes>
+    </test>
+</suite>
